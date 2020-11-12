@@ -7,7 +7,7 @@ This is a weather app that uses the OpenWeather API to request what the current 
 - JS (Native)
 - Open Weather API
 
-![alt text](https://en.wikipedia.org/wiki/OpenWeatherMap#/media/File:OpenWeather-Logo.jpg)
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 https://openweathermap.org/
 
 ## How API works
