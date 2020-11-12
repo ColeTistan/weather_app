@@ -1,4 +1,4 @@
-# weather_app
+# Weather App
 This is a weather app that uses the OpenWeather API to request what the current weather is in the specified location entered in the user input. 
 
 ## The Languages and Technologies used
@@ -7,6 +7,7 @@ This is a weather app that uses the OpenWeather API to request what the current 
 - JS (Native)
 - Open Weather API
 
+![alt text](https://en.wikipedia.org/wiki/OpenWeatherMap#/media/File:OpenWeather-Logo.jpg)
 https://openweathermap.org/
 
 ## How API works
