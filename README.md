@@ -2,10 +2,12 @@
 This is a weather app that uses the OpenWeather API to request what the current weather is in the specified location entered in the user input. 
 
 ## The Languages and Technologies used
+
 - HTML5
 - CSS3
 - JS (Native)
 - Open Weather API
+- Vue
 
 https://openweathermap.org/
 
