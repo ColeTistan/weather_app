@@ -17,7 +17,3 @@ the necessary data needed such as the following:
 - temperature
 - current weather e.g. clouds, raining, etc.
 - high and low temperature
-
-## TODO in forseeable future
-- allow background to change based on temperature
-- allow ability for the user to switch between metric or imperial units.
