@@ -19,3 +19,6 @@ the necessary data needed such as the following:
 - temperature
 - current weather e.g. clouds, raining, etc.
 - high and low temperature
+
+## features
+In the Vue version of this Weather app, background will change when a user searches for a location with a temperature of 16 degrees Celsius or more.
