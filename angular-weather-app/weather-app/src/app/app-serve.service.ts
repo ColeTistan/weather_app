@@ -15,6 +15,6 @@ export class AppServeService {
   }
 
   getWeather(cityName: String):Observable<any> {
-    return this._http.get(`${this.baseUrl}?appid=${this.apiKey}&q=${cityName}`)
+    return this._http.get(`${this.baseUrl}?appid=${this.apiKey}&q=${cityName}&units=metric`)
   }
 }

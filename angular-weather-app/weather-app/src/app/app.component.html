@@ -1,14 +1,33 @@
 <div class="app">
-  <!-- <form (submit)="submitForm(cityName)"> -->
-  <form >
+  <form (submit)="submitForm(cityName)">
     <input type="text" placeholder="Enter a city name..." #cityName>
-    <button>Submit</button>
+    <button>
+      <svg 
+        fill="#f1f1f1"
+        xmlns="http://www.w3.org/2000/svg" 
+        width="13" 
+        height="13" 
+        viewBox="0 0 24 24"
+      >
+        <path 
+          d="M23.822 20.88l-6.353-6.354c.93-1.465 1.467-3.2 1.467-5.059.001-5.219-4.247-9.467-9.468-9.467s-9.468 4.248-9.468 9.468c0 5.221 4.247 9.469 9.468 9.469 1.768 0 3.421-.487 4.839-1.333l6.396 6.396 3.119-3.12zm-20.294-11.412c0-3.273 2.665-5.938 5.939-5.938 3.275 0 5.94 2.664 5.94 5.938 0 3.275-2.665 5.939-5.94 5.939-3.274 0-5.939-2.664-5.939-5.939z"
+        />
+      </svg>
+    </button>
   </form>
-  <div class="results-card">
-    <p class="weather-details"></p>
-    <p class="weather-details"></p>
-    <p class="weather-details"></p>
-    <p class="weather-details"></p>
-    <p class="weather-details"></p>
+  <div class="results-card" *ngIf="weather">
+    <p class="weather-details" id="location">
+      {{weather.name}}, {{weather.sys.country}}
+    </p>
+    <p class="weather-details" id="temp">
+      {{weather.main.temp | number: '1.0-0'}}°C
+    </p>
+    <p class="weather-details" id="current-weather">
+      {{weather.weather[0].main}}
+    </p>
+    <p class="weather-details" id="high-low-temp">
+      {{weather.main.temp_max | number: '1.0-0'}}°C / 
+      {{weather.main.temp_min | number: '1.0-0'}}°C
+    </p>
   </div>
 </div>

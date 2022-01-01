@@ -11,19 +11,21 @@ export class AppComponent implements OnInit {
   constructor (private weatherService: AppServeService) { }
 
   ngOnInit() { }
+  weather:any = undefined
 
-  // getWeatherData(cityName: String) {
-  //   this.weatherService.getWeather(cityName).subscribe(
-  //     (data) => {
-  //       console.log(data)
-  //     },
-  //     (error) => {
-  //       console.log(error)
-  //     })
-  // }
+  getWeatherData(cityName: String) {
+    this.weatherService.getWeather(cityName).subscribe(
+      (data) => {
+        console.log(data)
+        this.weather = data
+      },
+      (error) => {
+        console.log(error)
+      })
+  }
 
-  // submitForm(cityName: HTMLInputElement) {
-  //   this.getWeatherData(cityName.value)
-  //   return false;
-  // }
+  submitForm(cityName: HTMLInputElement) {
+    this.getWeatherData(cityName.value)
+    return false;
+  }
 }
